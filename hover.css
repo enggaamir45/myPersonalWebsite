@@ -1,0 +1,420 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body
+{
+	margin-top: 100px;
+}
+
+.grow{
+	padding: 20px;
+	background-color: bisque;
+	width: 40px;
+	cursor: pointer;
+	transition: 0.8s;
+	float: left;
+}
+
+.grow:hover {
+	transform: scale(1.2);
+}
+
+.shrink{
+	padding: 20px;
+	background-color: bisque;
+	width: 40px;
+	cursor: pointer;
+	transition: 0.8s;
+	float: left;
+	margin-left: 10px;
+}
+
+.shrink:hover {
+	transform: scale(0.8);
+}
+
+.pulse{
+	padding: 20px;
+	background-color: bisque;
+	width: 40px;
+	cursor: pointer;
+	float: left;
+	margin-left: 10px;
+}
+
+@keyframes pulse{
+	0%{
+		
+		transform: scale(1);
+	}
+	
+	50%{
+		
+		transform: scale(0.8);
+	}
+	
+	100%{
+		
+		transform: scale(1);
+	}
+}
+
+.pulse:hover{
+	animation: pulse 1s linear infinite;
+	animation-fill-mode: forwards;
+}
+
+.bounce-in{
+	padding: 20px;
+	background-color: bisque;
+	width: 80px;
+	cursor: pointer;
+	float: left;
+	margin-left: 20px;
+}
+
+@keyframes bounce-in{
+	0%{
+		
+		transform: scale(1);
+	}
+	
+	25%{
+		
+		transform: scale(1.2);
+	}
+	
+	50%{
+		transform: scale(1);
+	}
+	
+	75%{
+		transform: scale(1.2);
+	}
+	
+	100%{
+		
+		transform: scale(1);
+	}
+}
+
+.bounce-in:hover{
+	animation: bounce-in 0.5s linear;
+	animation-fill-mode: forwards;
+}
+
+.bounce-out{
+	padding: 20px;
+	background-color: bisque;
+	width: 80px;
+	cursor: pointer;
+	float: left;
+	margin-left: 20px;
+}
+
+@keyframes bounce-out{
+	0%{
+		
+		transform: scale(1);
+	}
+	
+	25%{
+		
+		transform: scale(0.8);
+	}
+	
+	50%{
+		transform: scale(1);
+	}
+	
+	75%{
+		transform: scale(0.8);
+	}
+	
+	100%{
+		
+		transform: scale(1);
+	}
+}
+
+.bounce-out:hover{
+	animation: bounce-out 0.5s linear;
+	animation-fill-mode: forwards;
+}
+
+.float{
+	padding: 20px;
+	background-color: bisque;
+	width: 40px;
+	cursor: pointer;
+	transition: 0.8s;
+	float: left;
+	margin-left: 10px;
+}
+
+@keyframes float{
+	from{
+		transform: translateY(0);
+	}
+	
+	to{
+		transform: translateY(-10px);
+	}
+}
+
+.float:hover{
+	animation: float 0.3s linear;
+	animation-fill-mode: forwards;
+}
+
+.sink{
+	padding: 20px;
+	background-color: bisque;
+	width: 40px;
+	cursor: pointer;
+	transition: 0.8s;
+	float: left;
+	margin-left: 10px;
+}
+
+@keyframes sink{
+	from{
+		transform: translateY(0);
+	}
+	
+	to{
+		transform: translateY(10px);
+	}
+}
+
+.sink:hover{
+	animation: sink 0.3s linear;
+	animation-fill-mode: forwards;
+}
+
+.wobble{
+	padding: 10px;
+	background-color: bisque;
+	width: 100px;
+	cursor: pointer;
+	float: left;
+	margin-left: 40px;
+}
+
+@keyframes wobble{
+	0%{
+		
+		transform: translateX(0);
+	}
+	
+	20%{
+		
+		transform: translateX(10px);
+	}
+	
+	40%{
+		transform: translateX(-10px);
+	}
+	
+	60%{
+		transform: translateX(5px);
+	}
+	
+	80%{
+		
+		transform: translateX(-5px);
+	}
+	
+	100%{
+		
+		transform: translateX(0px);
+	}
+}
+
+.wobble:hover{
+	animation: wobble 0.5s linear;
+	animation-fill-mode: forwards;
+}
+
+
+.skew-forward{
+	padding: 10px;
+	background-color: bisque;
+	width: 100px;
+	cursor: pointer;
+	float: left;
+	margin-left: 40px;
+}
+
+@keyframes skew-forward{
+	from{
+		transform: skewX(0)
+	}
+	
+	to{
+		transform: skewX(-20deg);
+	}
+}
+
+
+.skew-forward:hover{
+	animation: skew-forward 0.3s linear;
+	animation-fill-mode: forwards;
+}
+
+
+.skew-backward{
+	padding: 10px;
+	background-color: bisque;
+	width: 100px;
+	cursor: pointer;
+	float: left;
+	margin-left: 40px;
+}
+
+@keyframes skew-backward{
+	from{
+		transform: skewX(0)
+	}
+	
+	to{
+		transform: skewX(20deg);
+	}
+}
+
+
+.skew-backward:hover{
+	animation: skew-backward 0.3s linear;
+	animation-fill-mode: forwards;
+}
+
+.back-pulse{
+	padding: 20px;
+	background-color: bisque;
+	width: 80px;
+	cursor: pointer;
+	float: left;
+	margin-left: 20px;
+}
+
+@keyframes back-pulse{
+	0%{
+		background-color: #363488;
+	}
+	
+	50%{
+		background-color:#3443BB;
+	}
+	
+	100%{
+		background-color: #363488;
+	}
+}
+
+.back-pulse:hover{
+	animation: back-pulse 1s linear infinite;
+	color: white;
+}
+
+/* Sweep To Right */
+.swipe-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  margin-top: 30px;
+  padding: 20px;
+  cursor: pointer;
+  background-color: lightgray;
+}
+.swipe-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2098D1;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.swipe-right:hover, .swipe-right:focus, .swipe-right:active {
+  color: white;
+}
+
+.swipe-right:hover:before, .swipe-right:focus:before, .swipe-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.border-fade {
+  display: inline-block;
+  vertical-align: middle;
+  transition: border 0.2s linear;
+  margin-top: 30px;
+  margin-left: 20px;
+  padding: 20px;
+  cursor: pointer;
+  background-color: lightgray;
+	border: none;
+}
+
+.border-fade:hover{
+	border: 4px solid blue;
+}
+
+.hollow {
+  display: inline-block;
+  vertical-align: middle;
+  transition: border 0.2s linear, background-color 0.1s linear;
+  margin-top: 30px;
+  margin-left: 20px;
+  padding: 20px;
+  cursor: pointer;
+  background-color: lightgray;
+  border: none;
+}
+
+.hollow:hover{
+	border: 4px solid blue;
+	background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

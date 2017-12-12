@@ -1,0 +1,555 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+
+<meta name="viewport" content="width=device-width, initial-scaling=1.0">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<Style>
+	
+	html
+	{
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	}
+	
+	*
+	{
+		box-sizing: border-box;
+	}
+	
+	body
+	{
+		margin: 0;
+	}
+	
+	.navigation-bar
+	{
+		position: fixed;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+	
+	.navigation-bar ul
+	{
+		position: relative;
+		background-color: black;
+	    list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.navigation-bar li
+	{
+		text-align: center;
+		background-color: black;
+		display: inline-block;	
+	}
+	
+	.navigation-bar a
+	{
+		text-decoration: none;
+		color: white;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		padding-right: 30px;
+		padding-left: 30px;
+		text-align: center;
+		display: inline-block;
+	}
+	
+	.navigation-bar li:hover
+	{
+		background-color: grey;
+		color: black;
+	}
+	
+	.navigation-bar a:hover
+	{
+		color: black;
+		background-color: grey;
+	}
+	
+	.dropdown
+	{
+		padding: 0;
+		margin: 0;
+	}
+	
+	
+	.dropdown:hover .dropdown-content
+	{
+		display: block;
+		
+	}
+	
+	.dropdown-content
+	{
+		display: none;
+		position: absolute;
+		width: 160px;
+		padding: 0px;
+		margin: 0;
+		background-color:dimgray;
+	}
+	
+	.dropdown-content a
+	{
+		display: block;
+	}
+	
+	.clearfix::after
+	{
+		clear: both;
+		content: "";
+		display: block;
+	}
+	
+	.image-text
+	{
+		position: absolute;
+		left: 40%;
+		top: 380px;
+		text-shadow: 2px 2px 4px gray;
+	}
+	
+	.image-text h1
+	{
+		text-align: center;
+	}
+	img
+	{
+		width: 100%;
+	}
+	
+	.band
+	{
+		margin-top: 60px;
+	}
+	
+	
+	.band-heading h1
+	{
+		text-align: center;
+	}
+	
+	.band-images
+	{
+		padding: 30px;
+	}
+	
+	.band-images img
+	{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	
+	.img1
+	{
+		text-align: center;
+		width: 30%;
+		float: left;
+		border-radius: 8px;
+		margin-right: 30px;
+		margin-left: 20px;
+	}
+	
+	.img1 img
+	{
+	  border-radius: 20px;
+	}
+	
+	.img2
+	{
+		margin-right: 30px;
+		text-align: center;
+		width: 30%;
+		float: left;
+	}
+	
+	.img2 img
+	{
+		border-radius: 20px;
+	}
+	
+	.img3
+	{
+		text-align: center;
+		width: 30%;
+		float: left;
+	}
+	
+	.img3 img
+	{
+		border-radius: 20px;
+	}
+	
+	.band::after
+	{
+		clear: both;
+		content: "";
+		display: table;
+	}
+	
+	.tour-main
+	{
+		background-color: black;
+	}
+	
+	.tour-head
+	{
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	 text-align: center;
+		color: white;
+		padding: 60px;
+	}
+	
+	.tour-dates
+	{
+		background-color: white;
+		margin-left: 150px;
+		margin-right: 150px;
+		border-radius: 8px;
+		padding: 16px;
+	}
+	
+	.tour-main::after
+	{
+		clear: both;
+		content: "";
+		display: block;
+	}
+	
+	.tour-venues
+	{
+		background-color: black;
+		overflow: hidden;
+		padding-top: 30px;
+		padding-bottom: 80px;
+	}
+	
+	.venue11
+	{
+		margin-left: 150px;
+		margin-right: 150px;
+		padding: 0;
+	}
+	
+	.new-york
+	{
+		float: left;
+		width: 32%;
+		background-color: white;
+		margin-right: 15px;
+		padding-bottom: 20px;;
+	}
+	
+	.paris
+	{
+		float: left;
+		width: 32%;
+		background-color: white;
+		margin-right: 15px;
+		padding-bottom: 20px;
+		
+	}
+	
+	.san-francisco
+	{
+		float: left;
+		width: 32%;
+		background-color: white;
+		padding-bottom: 20px;
+	}
+	
+	.new-york a
+	{
+		text-decoration: none;
+		background-color: black;
+		color: white;
+		padding: 12px;
+		margin-left: 4px;
+		
+	}
+	
+	.paris a
+	{
+		text-decoration: none;
+		background-color: black;
+		color: white;
+		padding: 12px;
+		margin-left: 4px;
+		
+	}
+	
+	.san-francisco a
+	{
+		text-decoration: none;
+		background-color: black;
+		color: white;
+		padding: 12px;
+		margin-left: 4px;	
+	}
+	
+	.new-york a:hover
+	{
+		background-color: gray;
+	}
+	
+	.paris a:hover
+	{
+		background-color: gray;
+	}
+	
+  .san-francisco a:hover
+	{
+		background-color: gray;
+	}
+	
+	.new-york p
+	{
+		margin-left: 6px;
+	}
+	
+	.paris p
+	{
+		margin-left: 6px;
+	}
+	
+	.san-francisco p
+	{
+		margin-left: 6px;
+	}
+	
+	.tour-venues::after
+	{
+		clear: both;
+		content: "";
+		display: block;
+	}
+	
+	.message
+	{
+		padding-top: 40px;
+	}
+	
+	.left{
+		float: left;
+		width: 40%;
+		padding-left: 20px;
+		color: grey;
+	}
+	
+	.right{
+		float: left;
+		width: 60%;
+		padding-left: 20px;
+	}
+
+	input[type=text]
+	{
+		width: 45%;
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+	
+	input[type=submit]
+	{
+		width: 20%;
+		background-color: gray;
+		padding: 12px;
+		color: white;
+		cursor: pointer;
+		float: right;
+		margin-right: 50px;
+	}
+	
+	input[type=submit]:hover{
+		background-color: forestgreen;
+	}
+	
+	.contact
+	{
+	    height: 350px;
+		margin-top: 80px;
+	}
+	
+	.contact::after
+	{
+		clear: both;
+		content: "";
+		display: inline;
+	}
+	
+	.footer
+	{
+	 margin-bottom: 40px;
+	}
+	.footer a
+	
+	{
+       color: darkgray;
+	}
+	
+	.footer a:hover
+	{
+		color:lightgray;
+	}
+	</Style>
+	
+</head>
+
+<body>
+
+<div class="navigation-bar">
+<ul>
+	
+	<li><a href="#" target="_blank">Home</a></li>
+	<li><a href="#band" target="_self">Band</a></li>
+	<li><a href="#tour" target="_self">Tour</a></li>
+	<li><a href="#contacts" target="_self">Contact</a></li>
+	<li class="dropdown">
+	<div class="dropdown-button">
+	<a href="#" target="_blank">More</a>
+		</div>
+		<div class="dropdown-content">
+			<a href="#">Merchandise</a>
+			<a href="#">Extras</a>
+			<a href="#">Media</a>
+		</div>
+		</li>
+		<li style="float:right;"><a href="#">Search</a></li>
+</ul>	
+</div>
+
+<div class="clearfix">
+	
+	<div class="image">
+		<img src="images2/fall-autumn-red-season.jpg" height="500px" alt="nature">
+		<div class="image-text">
+		<h1>Nature</h1>
+		<p id="band">This is a picture of beautiful nature</p>
+		</div>
+	</div>
+</div>
+
+<div class="band">
+
+<div class="band-heading">
+	<h1> THE BAND</h1>
+	<p align="center"><i>we love music</i></p>
+	<p style="margin-left: 10px; margin-right: 10px;">This is a webpage created for some particular band. The website contains information about their tours, ticket booking, band members and their contacts. This is the first website I am designing with total responsiveness. We can resize the browser window to see the difference. This is my first step into the web design and web development world. I hope I could get better with time. All I need is concentration and blessings of my family. I wish to succeed and become a professional web developer in future. </p>
+	</div>
+	
+	<div class="band-images col-3">
+	
+	<div class="img1">
+	<p>Name</p>
+		<img src="images2/download.jpeg" alt="image1" height="380">
+		</div>
+		
+		<div class="img2">
+	<p> Name</p>
+	<img src="images2/download (1).jpeg" alt="image2" height="380px" width="280px">
+	</div>
+	
+	<div class="img3">
+		<p> Name</p>
+		<img src="images2/tree-fall-fall-colors-fall-leaves-70648.jpeg" height=380px width="320px">
+	</div>
+	</div>
+</div>
+
+<div class="tour-main" id="tour">
+
+	<div class="tour-head">
+		<p style="font-size: 30px"> TOUR DATES</p>
+		<p style="color: gray;"><i>Remember to book your tickets</i></p>
+		
+	</div>
+	
+	<div class="tour-dates">
+   <div style="border-bottom: 1px solid gray; padding: 16px;"><div style="display: inline; float: left; padding-right: 10px;">september</div> <div><strong style="background-color:red;"> sold out</strong></div></div>
+       <div style="border-bottom: 1px solid gray;">  <div style="display: inline; float: left; padding: 20px;">October</div> <div style="padding: 20px;"><strong style="background-color: red;"> sold out</strong></div></div>
+      <div style="display: inline; float: left; padding: 20px;">November</div> <div style="padding: 20px;"><strong style="background-color: dimgray; border-radius: 100%; padding: 5px; float: right;"> 3 </strong></div>
+	</div>
+	
+	</div>
+
+<div class="tour-venues">
+<div class="venue11">
+	<div class="new-york">
+	<div>
+		<img src="images2/freedom-tower.jpg" width="140px" height="200px">
+		<p>New York</p>
+		<p style="color: darkgray;">Fri 27 Nov 2017</p>
+		<p>Book your tickets right now.</p>
+		<a href="#">Buy Tickets</a>
+	</div>
+	</div>
+	
+	<div class="paris">
+	<div>
+		<img src="images2/monuments.jpg" width="140px" height="200px">
+		<p>Paris</p>
+		<p style="color: darkgray;">Sun 29 Nov 2017</p>
+		<p>Book your tickets right now.</p>
+		<a href="#">Buy Tickets</a>
+	</div>
+	</div>
+	
+	<div class="san-francisco">
+	<div>
+		<img src="images2/WCO_SanFrancisco_hero_GettyImages-476881195_1536x768_crop-left_2.jpg" width="150px" height="200px">
+		<p>New York</p>
+		<p style="color: darkgray;">Wed 02 Dec 2017</p>
+		<p>Book your tickets right now.</p>
+		<a href="#">Buy Tickets</a>
+	</div>
+	</div>
+	</div>
+</div>
+
+<div class="contact" id="contacts">
+	<h2 style="color: gray; font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif'; margin-left: 42%;">CONTACT</h2>
+	<p style="color: grey; margin-left: 42%;">fan? Drop a note!</p>
+	
+	<div class="message">
+	<div class="left">
+		<p>Chicago, US</p>
+		<p>Phone: +00 550011</p>
+		<p>Email: mail@mail.com</p>
+	</div>
+	
+	<div class="right">
+	<form>
+		
+		<input type="text" name="fname" placeholder="Name" style="padding: 10px; border: 1px solid gray; border-radius: 5px; width=100%;">
+		<input type="text" name="lname" placeholder="Email" style="padding: 10px; border: 1px solid gray; border-radius: 5px; width=100%;">
+		<br>
+		<input type="text" name="email" placeholder="Message" style="padding: 10px; border: 1px solid gray; border-radius: 5px; width=100%;"><br>
+		
+		<input type="submit" name="subit" value="send" style="padding-left: 20px; padding-right: 20px; border: 1px solid gray; border-radius: 5px; width=100%; font-size: 20px;">
+	</form>
+</div>
+
+	</div>
+	</div>
+	
+	<div class="footer" style="text-align: center;">
+		<a href="https://www.facebook.com"><i class="fa fa-facebook-official" style="font-size: 32px;"></i></a>
+	    <a href="https://www.instagram.com"><i class="fa fa-instagram" style="font-size: 32px;"></i></a>
+	    <a href="https://www.snapchat.com"><i class="fa fa-snapchat" style="font-size: 32px;"></i></a>
+	    <a href="https://www.pinterest.com"><i class="fa fa-pinterest" style="font-size: 32px;"></i></a>
+         <a href="https://www.twitter.com"><i class="fa fa-twitter" style="font-size: 32px;"></i></a>
+          <a href="https://www.linkedin.com"><i class="fa fa-linkedin" style="font-size: 32px;"></i></a><br><br>
+		<span>Designed by: <strong><em>Aamir Husain Ansari</em></strong></span>
+		
+	</div>
+
+</body>
+</html>

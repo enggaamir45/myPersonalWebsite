@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/*CSS Document*/
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	width: 900px;
+	height: 600px;
+	background-color: #B59ABF;
+	margin: 100px auto;
+	
+}
+
+/* styles for header section 
+---------------------------------------------------------------------------------------------
+*/
+
+.header {
+	height: 150px;
+	background-color: #EC4D4F;
+	width: 100%;
+}
+
+h1{
+	font-size: 70px;
+	text-align: center;
+	line-height: 150px;
+}
+/* styles for menu 
+---------------------------------------------------------------------------------------------
+*/
+
+.main-menu{
+	width: 100%;
+	height: 50px;
+	background-color: #5E7567;
+}
+
+.main-menu ul {
+	list-style-type: none;
+	width: 75%;
+	height: 100%;
+}
+
+.main-menu ul li{
+	float: left;
+	width: 30%;
+}
+
+.main-menu ul li a{
+	display: block;
+	padding: 11px 16px;
+	text-align: center;
+	text-decoration: none;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 24px;
+	color:#410D2A;
+}
+
+.main-menu ul li a:hover{
+	background-color:#888F85; 
+}
+
+.main-menu ul li a:active{
+	background-color: #1F241F;
+	color: #ECE1E1;
+}
+
+
+
+
+
+/* styles for form/ content section 
+---------------------------------------------------------------------------------------------
+*/
+
+.form-content{
+	width: 100%;
+	height: 400px;
+	background-color: cadetblue;
+}
+
+.form{
+	width: 60%;
+	float: right;
+	height: 350px;
+	margin-top: 50px;
+}
+
+.form h3{
+	font-size: 24px;
+	color:#203A48;
+	margin: 8px;
+}
+
+.form input{
+	width: 400px;
+	height: 36px;
+	margin: 8px;
+	font-size: 20px;
+	border-radius: 4px;
+	border: none;
+	padding-left: 4px;
+	line-height: 36px;
+}
+
+.form input[type=checkbox]{
+	
+	width: auto;
+	
+}
+
+label{
+display: inline;
+}
+
+.form input[type=submit]{
+	background-color: dodgerblue;
+	width: 100px;
+	box-shadow: 0.4px 0.2px 0.3px 0.5px lightblue;
+	color: white;
+}
+
+.form input[type=submit]:hover{
+	background-color: darkblue;
+	width: 100px;
+	box-shadow: 0.4px 0.2px 0.3px 0.5px lightblue;
+	color: white;
+	cursor: pointer;
+}
+
+
+.form-content h2{
+	font-size: 24px;
+	color: #3E0102;
+	text-align: center;
+	padding: 20px 0 40px 0;
+}
+
+.form-content a{
+	text-decoration: none;
+	background-color: darkblue;
+	padding: 16px 40px;
+	width: 150px;
+	border: none;
+	box-shadow: 0.4px 0.2px 0.3px 0.5px lightblue;
+	color: white;
+	margin-left: 40%;
+	margin-top: 30%;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

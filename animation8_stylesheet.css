@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background-color: aquamarine;
+}
+
+.box {
+	position: absolute;
+	left: 50%;
+	top: -50%;
+	height: 200px;
+	width: 300px;
+	background-color: blue;
+	transform:  translate(-50%, -50%);
+	
+	text-align: center;
+	line-height: 200px;
+	animation: drop 2s ease-out, fall 1s 5s forwards;;
+	animation-fill-mode: forwards;
+ 
+}
+
+@keyframes drop {
+	0%{
+		top: -50%
+	}
+	
+	75%{
+		top:55%
+	}
+	
+	95%{
+		top:48%;
+	}
+	
+	100%{
+		top:50%;
+	}
+}
+
+@keyframes fall {
+	from{
+		transform-origin: -1px -200px;
+	}
+	
+	to{
+		transform-origin: -1px -200px;
+		transform: rotate(65deg);
+	}
+}

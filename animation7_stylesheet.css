@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background-color: lightblue;
+}
+
+.container {
+	width: 500px;
+	height: 100px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.square {
+	width: 30px;
+	height: 30px;
+	border: 2px solid gray;
+	float: left;
+	animation-iteration-count: infinite;
+	
+}
+
+.square:nth-child(1){
+	background-color: tomato;
+	animation: snake 3s ease;
+	animation-fill-mode: forwards;
+}
+
+.square:nth-child(2){
+	background-color: teal;
+	animation: snake 3s ease;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+
+.square:nth-child(3){
+	background-color: saddlebrown;
+	animation: snake 3s ease;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+
+.square:nth-child(4){
+	background-color: cadetblue;
+	animation: snake 3s ease;
+	animation-fill-mode: forwards;
+	animation-delay: 9s;
+}
+
+
+.square:nth-child(5){
+	background-color:darkgreen;
+	animation: snake 3s ease;
+	animation-fill-mode: forwards;
+	animation-delay: 12s;
+}
+
+
+.square:nth-child(6){
+	background-color:darkviolet;
+	animation: snake 3s ease;
+	animation-fill-mode: forwards;
+	animation-delay: 15s;
+}
+
+
+@keyframes snake {
+	0%{
+		
+		transform: translate(0);
+		
+	}
+	
+	10%{
+		transform: translate(0px, 32px);
+	}
+	
+	20%{
+		transform: translate(34px, 32px);
+	}
+	
+	30%{
+		transform: translate(34px, -32px);
+	}
+	
+	40%{
+		transform: translate(68px, -32px);
+	}
+	
+	50%{
+		transform: translate(68px, 32px);
+	}
+	
+	60%{
+		transform: translate(102px, 32px);
+	}
+	
+	70%{
+		transform: translate(102px, -32px);
+	}
+	
+	80%{
+		transform: translate(138px, -32px);
+	}
+	
+	90%{
+		transform: translate(138px, 32px);
+	}
+	
+	95%{
+		transform: translate(172px, 32px);
+	}
+	
+	100%{
+		transform: translate(172px, 0px);
+	}
+}

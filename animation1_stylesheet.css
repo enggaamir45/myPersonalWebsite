@@ -1,0 +1,181 @@
+.container {
+	height: 400px;
+	width: 400px;
+	margin: 100px auto;
+	background-color: lightgrey;
+	position: relative;
+}
+
+.element {
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	left: 150px;
+	top: 150px;
+	background-color: red;
+	animation: square-to-circle 1s 2s infinite alternate;
+	-webkit-animation: square-to-circle 1s 2s infinite alternate;
+	-moz-animation: square-to-circle 1s 2s infinite alternate;
+	-o-animation: square-to-circle 1s 2s infinite alternate;
+	-ms-animation: square-to-circle 1s 2s infinite alternate;
+}
+
+@keyframes square-to-circle {
+	0%{
+		border-radius: 0 0 0 0;
+		background-color: red;
+		transform: rotate(0deg);
+	}
+
+	25%{
+		border-radius: 50% 0 0 0;
+		background-color: tomatored;
+		transform: rotate(45deg);
+	}
+
+	50%{
+		border-radius: 50% 50% 0 0;
+		background-color: green;
+		transform: rotate(90deg);
+	}
+
+	75%{
+		border-radius: 50% 50% 50% 0;
+		background-color: lightgreen;
+		transform: rotate(135deg);
+	}
+
+	100%{
+		border-radius: 50%;
+		background-color: peach;
+		transform: rotate(180deg);
+	}
+}
+
+@-webkit-keyframes square-to-circle {
+	0%{
+		border-radius: 0 0 0 0;
+		background-color: red;
+		transform: rotate(0deg);
+	}
+
+	25%{
+		border-radius: 50% 0 0 0;
+		background-color: tomatored;
+		transform: rotate(45deg);
+	}
+
+	50%{
+		border-radius: 50% 50% 0 0;
+		background-color: green;
+		transform: rotate(90deg);
+	}
+
+	75%{
+		border-radius: 50% 50% 50% 0;
+		background-color: lightgreen;
+		transform: rotate(135deg);
+	}
+
+	100%{
+		border-radius: 50%;
+		background-color: peach;
+		transform: rotate(180deg);
+	}
+}
+
+@-moz-keyframes square-to-circle {
+	0%{
+		border-radius: 0 0 0 0;
+		background-color: red;
+		transform: rotate(0deg);
+	}
+
+	25%{
+		border-radius: 50% 0 0 0;
+		background-color: tomatored;
+		transform: rotate(45deg);
+	}
+
+	50%{
+		border-radius: 50% 50% 0 0;
+		background-color: green;
+		transform: rotate(90deg);
+	}
+
+	75%{
+		border-radius: 50% 50% 50% 0;
+		background-color: lightgreen;
+		transform: rotate(135deg);
+	}
+
+	100%{
+		border-radius: 50%;
+		background-color: peach;
+		transform: rotate(180deg);
+	}
+}
+
+@-o-keyframes square-to-circle {
+	0%{
+		border-radius: 0 0 0 0;
+		background-color: red;
+		transform: rotate(0deg);
+	}
+
+	25%{
+		border-radius: 50% 0 0 0;
+		background-color: tomatored;
+		transform: rotate(45deg);
+	}
+
+	50%{
+		border-radius: 50% 50% 0 0;
+		background-color: green;
+		transform: rotate(90deg);
+	}
+
+	75%{
+		border-radius: 50% 50% 50% 0;
+		background-color: lightgreen;
+		transform: rotate(135deg);
+	}
+
+	100%{
+		border-radius: 50%;
+		background-color: peach;
+		transform: rotate(180deg);
+	}
+}
+
+@-ms-keyframes square-to-circle {
+	0%{
+		border-radius: 0 0 0 0;
+		background-color: red;
+		transform: rotate(0deg);
+	}
+
+	25%{
+		border-radius: 50% 0 0 0;
+		background-color: tomatored;
+		transform: rotate(45deg);
+	}
+
+	50%{
+		border-radius: 50% 50% 0 0;
+		background-color: green;
+		transform: rotate(90deg);
+	}
+
+	75%{
+		border-radius: 50% 50% 50% 0;
+		background-color: lightgreen;
+		transform: rotate(135deg);
+	}
+
+	100%{
+		border-radius: 50%;
+		background-color: peach;
+		transform: rotate(180deg);
+	}
+}

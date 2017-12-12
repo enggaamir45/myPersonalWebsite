@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: darkslateblue;
+}
+
+.circle {
+	margin: 10px;
+	height: 100px;
+	width: 100px;
+	border: 1px solid black;
+	border-radius: 50%;
+	background-color: cadetblue;
+	float: left;
+	animation-name: drop;
+	animation-duration: 2s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+
+.circle:nth-child(1){
+	margin-left: 500px;
+}
+
+.circle:nth-child(2){
+	background-color:teal;
+	animation-name: drop;
+	animation-duration: 2.4s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+
+.circle:nth-child(3){
+	background-color:salmon;
+	animation-name: drop;
+	animation-duration: 3s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+@keyframes drop {
+	0%{
+		transform: translateY(0);
+		
+	}
+	
+	50%{
+		transform: translateY(550px);
+	}
+	
+	100%{
+		transform: translateY(500px);
+	}
+}

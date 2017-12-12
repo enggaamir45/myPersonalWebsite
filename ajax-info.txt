@@ -1,0 +1,5 @@
+AJAX
+
+AJAX Stands for Asynchronous Javascript and XML.
+AJAX uses browsers built in object XMLHttpRequest.
+AJAX changes the content of the page without ever refreshing the page.

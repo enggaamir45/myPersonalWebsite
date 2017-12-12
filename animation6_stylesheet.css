@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background: #769DBD;
+}
+h1, h3{
+	text-align: center;
+}
+
+.text{
+	text-align: center;
+	font-family:verdana;
+	font-weight: 700;
+	color: black;
+	display: none;
+	
+}
+
+.container {
+	width: 800px;
+	height: 200px;
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.circle-wrapper {
+	width: 150px;
+	height: 200px;
+	float: left;
+	margin-right: 10px;
+	position:relative;
+}
+
+.circle{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: lightgrey;
+	border: 2px solid gray;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+	transition: 1s;
+}
+
+.circle-wrapper:nth-child(1) .circle:hover{
+	background-color: red;
+}
+
+.circle-wrapper:nth-child(1) .circle:hover ~ .text{
+	display: block;
+}
+
+.circle-wrapper:nth-child(2) .circle:hover{
+	background-color: orange;
+}
+
+.circle-wrapper:nth-child(2) .circle:hover ~ .text{
+	display: block;
+}
+
+.circle-wrapper:nth-child(3) .circle:hover{
+	background-color: yellow;
+}
+
+.circle-wrapper:nth-child(3) .circle:hover ~ .text{
+	display: block;
+}
+
+.circle-wrapper:nth-child(4) .circle:hover{
+	background-color: lawngreen;
+}
+
+.circle-wrapper:nth-child(4) .circle:hover ~ .text{
+	display: block;
+}
+
+.circle-wrapper:nth-child(5) .circle:hover{
+	background-color: green;
+}
+
+.circle-wrapper:nth-child(5) .circle:hover ~ .text{
+	display: block;
+}
+
+
+

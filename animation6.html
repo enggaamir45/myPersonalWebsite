@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Animation 6</title>
+<link type="text/css" rel="stylesheet" href="animation6_stylesheet.css">
+</head>
+
+<body>
+
+<h1>Movie Review Page</h1>
+<h3>Submit your review by clicking on the following circles.</h3>
+	
+<div class="container">
+
+	<div class="circle-wrapper">
+	<div class="circle" id="circle" onClick="changeBorder()"></div>
+	<div class="text">waste of money</div>
+	</div>
+	
+	<div class="circle-wrapper">
+		<div class="circle" id="circle1" onClick="changeBorder1()"></div>
+		<div class="text">Nothing New</div>
+	</div>
+	
+	<div class="circle-wrapper">
+		<div class="circle" id="circle2" onClick="changeBorder2()"></div>
+		<div class="text">Can be watched once</div>
+	</div>
+	
+	<div class="circle-wrapper">
+		<div class="circle" id="circle3" onClick="changeBorder3()"></div>
+		<div class="text">Good Entertainer</div>
+	</div>
+	
+	<div class="circle-wrapper">
+		<div class="circle" id="circle4" onClick="changeBorder4()"></div>
+		<div class="text">A must watch</div>
+	</div>
+		
+</div>
+
+
+<script>
+	
+	function changeBorder(){
+		var x= document.getElementById('circle');
+		var x1= document.getElementById('circle1');
+		var x2= document.getElementById('circle2');
+		var x3= document.getElementById('circle3');
+		var x4= document.getElementById('circle4');
+		x.style.border= "2px solid darkblue";
+		x1.style.border= "2px solid gray";
+		x2.style.border= "2px solid gray";
+		x3.style.border= "2px solid gray";
+		x4.style.border= "2px solid gray";
+	}
+	
+	function changeBorder1(){
+		var x= document.getElementById('circle');
+		var x1= document.getElementById('circle1');
+		var x2= document.getElementById('circle2');
+		var x3= document.getElementById('circle3');
+		var x4= document.getElementById('circle4');
+		x1.style.border= "2px solid darkblue";
+		x.style.border= "2px solid gray";
+		x2.style.border= "2px solid gray";
+		x3.style.border= "2px solid gray";
+		x4.style.border= "2px solid gray";
+	}
+	
+	function changeBorder2(){
+		var x= document.getElementById('circle');
+		var x1= document.getElementById('circle1');
+		var x2= document.getElementById('circle2');
+		var x3= document.getElementById('circle3');
+		var x4= document.getElementById('circle4');
+		x2.style.border= "2px solid darkblue";
+		x.style.border= "2px solid gray";
+		x1.style.border= "2px solid gray";
+		x3.style.border= "2px solid gray";
+		x4.style.border= "2px solid gray";
+	}
+	
+	function changeBorder3(){
+		var x= document.getElementById('circle');
+		var x1= document.getElementById('circle1');
+		var x2= document.getElementById('circle2');
+		var x3= document.getElementById('circle3');
+		var x4= document.getElementById('circle4');
+		x3.style.border= "2px solid darkblue";
+		x.style.border= "2px solid gray";
+		x1.style.border= "2px solid gray";
+		x2.style.border= "2px solid gray";
+		x4.style.border= "2px solid gray";
+		
+	}
+	
+	function changeBorder4(){
+		var x= document.getElementById('circle');
+		var x1= document.getElementById('circle1');
+		var x2= document.getElementById('circle2');
+		var x3= document.getElementById('circle3');
+		var x4= document.getElementById('circle4');
+		x4.style.border= "2px solid darkblue";
+		x.style.border= "2px solid gray";
+		x1.style.border= "2px solid gray";
+		x2.style.border= "2px solid gray";
+		x3.style.border= "2px solid gray";
+	}
+
+	
+	</script>
+</body>
+</html>

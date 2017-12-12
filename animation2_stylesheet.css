@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.sky{
+	width: 100%;
+	height: 300px;
+	background-color: skyblue;
+}
+
+.grass{
+	width: 100%;
+	height: 250px;
+	background-color: green;
+}
+
+.road{
+	width: 100%;
+	height: 200px;
+	background-color: grey;
+	position: relative;
+}
+
+.cycle{
+	max-height: 100px;
+	max-width: 100px;
+	position: absolute;
+	top: -20px;
+	animation-name: drive;
+	animation-duration: 5s;
+	animation-delay: 2s;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	//animation-direction: reverse;
+	animation-timing-function: linear;
+	
+}
+
+.lines{
+	width: 100%;
+	border: 4px dashed white;
+	position: absolute;
+	top: 100px;
+}
+
+@keyframes drive{
+	from{
+		transform: translateX(-100px);
+	}
+	
+	to{
+		transform: translateX(1500px);	
+	}
+}
+
+
+
+
